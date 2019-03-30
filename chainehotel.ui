@@ -701,5 +701,22 @@
   <tabstop>pushButton_cancel</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ChaineHotel</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>473</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

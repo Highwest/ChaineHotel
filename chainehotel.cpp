@@ -22,10 +22,7 @@ ChaineHotel::~ChaineHotel()
 delete ui;
 }
 
-void ChaineHotel::on_pushButton_cancel_clicked()
-{
-    this->close();
-}
+
 
 void ChaineHotel::on_pushButton_connexion_clicked()
 {
