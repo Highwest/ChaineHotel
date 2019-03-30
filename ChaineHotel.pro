@@ -26,13 +26,16 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        chainehotel.cpp
+        chainehotel.cpp \
+    dashboard.cpp
 
 HEADERS += \
-        chainehotel.h
+        chainehotel.h \
+    dashboard.h
 
 FORMS += \
-        chainehotel.ui
+        chainehotel.ui \
+    dashboard.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

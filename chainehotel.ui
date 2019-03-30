@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1277</width>
-    <height>769</height>
+    <width>482</width>
+    <height>482</height>
    </rect>
   </property>
   <property name="palette">
@@ -466,7 +466,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../GDrive/PERS/PROJET C++/hotel (1).svg</normaloff>../../GDrive/PERS/PROJET C++/hotel (1).svg</iconset>
+    <normaloff>img/hotel.svg</normaloff>img/hotel.svg</iconset>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonTextUnderIcon</enum>
@@ -475,11 +475,18 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>160</y>
+      <x>20</x>
+      <y>20</y>
       <width>441</width>
-      <height>481</height>
+      <height>441</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="title">
      <string notr="true">SE CONNECTER</string>
@@ -505,8 +512,20 @@
      <property name="toolTip">
       <string comment="Tapez votre mot de passe ici!!!"/>
      </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_connexion">
@@ -521,6 +540,9 @@
      <property name="font">
       <font>
        <family>ABeeZee</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
@@ -539,6 +561,7 @@
      <property name="font">
       <font>
        <family>ABeeZee</family>
+       <pointsize>13</pointsize>
        <weight>75</weight>
        <bold>true</bold>
        <kerning>true</kerning>
@@ -546,6 +569,9 @@
      </property>
      <property name="text">
       <string>Nom d'utilisateur</string>
+     </property>
+     <property name="buddy">
+      <cstring>lineEdit_user</cstring>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_cancel">
@@ -560,6 +586,9 @@
      <property name="font">
       <font>
        <family>ABeeZee</family>
+       <pointsize>13</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="text">
@@ -597,10 +626,22 @@
       <string comment="Tapez nom d'utilisateur ici!!!"/>
      </property>
      <property name="autoFillBackground">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="cursorPosition">
+      <number>0</number>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="label_pass">
@@ -615,6 +656,7 @@
      <property name="font">
       <font>
        <family>ABeeZee</family>
+       <pointsize>13</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -622,18 +664,21 @@
      <property name="text">
       <string>Mot de passe</string>
      </property>
+     <property name="buddy">
+      <cstring>lineEdit_pass</cstring>
+     </property>
     </widget>
     <widget class="QLabel" name="label_staffHotel">
      <property name="geometry">
       <rect>
        <x>160</x>
        <y>50</y>
-       <width>115</width>
-       <height>125</height>
+       <width>135</width>
+       <height>135</height>
       </rect>
      </property>
      <property name="frameShape">
-      <enum>QFrame::Panel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="frameShadow">
       <enum>QFrame::Sunken</enum>
@@ -649,6 +694,12 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit_user</tabstop>
+  <tabstop>lineEdit_pass</tabstop>
+  <tabstop>pushButton_connexion</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

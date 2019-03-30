@@ -2,6 +2,7 @@
 #define CHAINEHOTEL_H
 
 #include <QMainWindow>
+#include "dashboard.h"
 
 namespace Ui {
 class ChaineHotel;
@@ -22,6 +23,9 @@ private slots:
 
 private:
 Ui::ChaineHotel *ui;
+Dashboard *D;
+
+
 };
 
 #endif // CHAINEHOTEL_H
