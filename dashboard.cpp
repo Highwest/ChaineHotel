@@ -3,6 +3,10 @@
 #include <qpixmap.h>
 
 
+
+
+
+
 Dashboard::Dashboard(QWidget *parent) :
 QDialog(parent),
 ui(new Ui::Dashboard)
@@ -21,7 +25,8 @@ ui->setupUi(this);
 //QPixmap Caisses("/home/pouretudes/qt projects/ChaineHotel/img/buy.svg");
 //ui->label_Caisses->setPixmap(Caisses.scaled(92,92,Qt::KeepAspectRatio));
 QPixmap logo(":/new/img/img/PACEM.png");
-ui->label_logo->setPixmap(logo.scaled(92,92,Qt::KeepAspectRatio));
+ui->label_logo->setPixmap(logo.scaled(170,170,Qt::KeepAspectRatio));
+
 
 }
 
@@ -29,5 +34,7 @@ Dashboard::~Dashboard()
 {
 delete ui;
 }
+
+
 
 

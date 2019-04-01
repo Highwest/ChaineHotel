@@ -10,7 +10,7 @@ ui(new Ui::ChaineHotel)
 {
 
 ui->setupUi(this);
-QPixmap pix("/home/pouretudes/qt projects/ChaineHotel/img/service.png");
+QPixmap pix(":/new/img/img/service.png");
 ui->label_staffHotel->setPixmap(pix.scaled(135,135,Qt::KeepAspectRatio));
 
 //QPixmap pix1("/home/pouretudes/qt projects/ChaineHotel/img/connectBox.png");
